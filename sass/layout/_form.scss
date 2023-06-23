@@ -1,0 +1,45 @@
+@use "../variables/colors" as *;
+
+.form {
+  $inputHeight: 3.5rem;
+
+  &__label {
+    font-size: 0.8rem;
+    font-weight: 900;
+  }
+  &__input {
+    display: block;
+    margin: 0.6rem auto 1rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid $Grey;
+    height: $inputHeight;
+    width: 100%;
+    &::placeholder {
+      font-size: 1.1rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: 1px solid $Tomato;
+      border: none;
+    }
+  }
+  &__btn {
+    height: $inputHeight;
+  }
+}
+
+.form {
+  position: relative;
+  &__error {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsla(0, 100%, 45%, 0.78);
+    position: absolute;
+    top: -0.61rem;
+    right: 0;
+  }
+}

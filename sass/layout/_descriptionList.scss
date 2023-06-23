@@ -1,0 +1,24 @@
+.descriptionList {
+  $leftSpace: 1.8rem;
+  ul {
+    padding-left: $leftSpace;
+    display: grid;
+    gap: 0.8rem;
+    list-style: none;
+  }
+  li {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      $size: 1.2rem;
+      height: $size;
+      width: $size;
+      left: -$leftSpace;
+      background-image: url("../assets/images/icon-list.svg");
+      background-size: contain;
+    }
+  }
+}

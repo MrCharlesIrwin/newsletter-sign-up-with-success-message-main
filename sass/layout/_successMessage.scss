@@ -1,0 +1,51 @@
+@use "../variables/colors" as *;
+
+.successMessage {
+  background-color: white;
+  display: none;
+  margin-inline: auto;
+  width: 370px;
+  padding: 2rem;
+
+  img {
+    $size: 4rem;
+    text-align: left;
+    height: $size;
+    width: $size;
+    margin-block: 6rem 1.8rem;
+  }
+
+  h2 {
+    width: 20ch;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin: 0;
+  }
+  p {
+    margin-block: 2rem 10rem;
+    em {
+      font-weight: 800;
+    }
+  }
+
+  button {
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .successMessage {
+    border-radius: 2rem;
+    width: 30rem;
+    h2 {
+      font-size: 3.5rem;
+    }
+    img {
+      margin-block-start: 0rem;
+    }
+    p {
+      margin-block-end: 2rem;
+    }
+  }
+}

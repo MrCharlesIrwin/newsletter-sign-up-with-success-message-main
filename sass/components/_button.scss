@@ -1,0 +1,17 @@
+@use "../variables/colors" as *;
+
+button,
+.form__btn {
+  border-radius: 0.6rem;
+  border: none;
+  background-color: $DarkSlateGrey;
+  color: $White;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  &:hover {
+    cursor: pointer;
+    background-color: $Tomato;
+    box-shadow: 0 0.3rem 1rem $Tomato;
+  }
+}

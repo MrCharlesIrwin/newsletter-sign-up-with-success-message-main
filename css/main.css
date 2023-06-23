@@ -1,0 +1,240 @@
+body {
+  height: 95vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 900px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+}
+.main {
+  background-color: hsl(0, 0%, 100%);
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-inline: auto;
+}
+.main__ilustrationImg-D {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .main {
+    border-radius: 2rem;
+    padding: 1.2rem;
+    margin-top: 15vh;
+    width: 900px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 0.9rem;
+  }
+  .main__illustrationImg-M {
+    display: none;
+  }
+  .main__ilustrationImg-D {
+    display: block;
+    width: 50%;
+    height: 35rem;
+  }
+}
+.descriptionHeader h1 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin: 0;
+}
+@media (min-width: 900px) {
+  .descriptionHeader h1 {
+    font-size: 3.3rem;
+  }
+}
+
+.descriptionList ul {
+  padding-left: 1.8rem;
+  display: grid;
+  gap: 0.8rem;
+  list-style: none;
+}
+.descriptionList li {
+  position: relative;
+}
+.descriptionList li:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  left: -1.8rem;
+  background-image: url("../assets/images/icon-list.svg");
+  background-size: contain;
+}
+
+.form__label {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.form__input {
+  display: block;
+  margin: 0.6rem auto 1rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  height: 3.5rem;
+  width: 100%;
+}
+.form__input::-webkit-input-placeholder {
+  font-size: 1.1rem;
+}
+.form__input::-moz-placeholder {
+  font-size: 1.1rem;
+}
+.form__input:-ms-input-placeholder {
+  font-size: 1.1rem;
+}
+.form__input::-ms-input-placeholder {
+  font-size: 1.1rem;
+}
+.form__input::placeholder {
+  font-size: 1.1rem;
+}
+.form__input:hover {
+  cursor: pointer;
+}
+.form__input:focus {
+  outline: 1px solid hsl(4, 100%, 67%);
+  border: none;
+}
+.form__btn {
+  height: 3.5rem;
+}
+
+.form {
+  position: relative;
+}
+.form__error {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsla(0, 100%, 45%, 0.78);
+  position: absolute;
+  top: -0.61rem;
+  right: 0;
+}
+
+.successMessage {
+  background-color: white;
+  display: none;
+  margin-inline: auto;
+  width: 370px;
+  padding: 2rem;
+}
+.successMessage img {
+  text-align: left;
+  height: 4rem;
+  width: 4rem;
+  margin-block: 6rem 1.8rem;
+}
+.successMessage h2 {
+  width: 20ch;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin: 0;
+}
+.successMessage p {
+  margin-block: 2rem 10rem;
+}
+.successMessage p em {
+  font-weight: 800;
+}
+.successMessage button {
+  height: 3.5rem;
+}
+
+@media (min-width: 900px) {
+  .successMessage {
+    border-radius: 2rem;
+    width: 30rem;
+  }
+  .successMessage h2 {
+    font-size: 3.5rem;
+  }
+  .successMessage img {
+    -webkit-margin-before: 0rem;
+            margin-block-start: 0rem;
+  }
+  .successMessage p {
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
+  }
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.description {
+  padding: 1.8rem;
+}
+
+button,
+.form__btn {
+  border-radius: 0.6rem;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+button:hover,
+.form__btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  -webkit-box-shadow: 0 0.3rem 1rem hsl(4, 100%, 67%);
+          box-shadow: 0 0.3rem 1rem hsl(4, 100%, 67%);
+}
+
+.background {
+  background-color: hsla(4, 100%, 67%, 0.2);
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
